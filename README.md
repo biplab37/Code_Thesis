@@ -1,6 +1,5 @@
 # Renoramlisation of Fermi Velocity in Graphene
-===============================================
-
+---
 This repository contains some code for the renormalisation of Fermi
 velocity and Dielectric Function of Graphene. We used the
 non-perturbative methods used in the paper by [Bauer, Rückriegel, Sharma and
@@ -17,7 +16,7 @@ Kopietz](http://dx.doi.org/10.1103/PhysRevB.92.121409).
  |
  |--frequency
  |
- \--non_perturbaive.pdf
+ \--non_perturbative.pdf
 ```
 
 ### Contents
