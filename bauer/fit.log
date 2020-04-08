@@ -430,3 +430,39 @@ correlation matrix of the fit parameters:
                 a      b      
 a               1.000 
 b               0.714  1.000 
+
+
+*******************************************************************************
+Tue Apr  7 19:42:22 2020
+
+
+FIT:    data read from 'velon0.dat'
+        format = z
+        #datapoints = 397
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x) = a + b*log(x)
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   a             b            
+   0 2.4238112783e+03   0.00e+00  1.21e+00    1.000000e+00   1.000000e+00
+   3 8.8754520434e-01  -4.30e-06  1.21e-03    1.393453e+00  -5.681070e-01
+
+After 3 iterations the fit converged.
+final sum of squares of residuals : 0.887545
+rel. change during last iteration : -4.30314e-11
+
+degrees of freedom    (FIT_NDF)                        : 395
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.047402
+variance of residuals (reduced chisquare) = WSSR/ndf   : 0.00224695
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+a               = 1.39345          +/- 0.003399     (0.2439%)
+b               = -0.568107        +/- 0.002452     (0.4315%)
+
+correlation matrix of the fit parameters:
+                a      b      
+a               1.000 
+b               0.714  1.000 

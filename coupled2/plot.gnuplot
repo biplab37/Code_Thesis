@@ -41,7 +41,8 @@ plot 'velon0.dat' title 'velocity', f(x) title 'fitted curve'
 
 
 set output 'renormalised_dielectric.png'
-set title 'Renormalised Velocity' font 'hack,12'
+set title 'Renormalised Dielectric Function' font 'hack,12'
+set yrange [1.05:1.55]
 set xlabel 'q/{/Symbol L}_0' font 'hack,11'
 set ylabel '{/Symbol e}_{{/Symbol L}=0}(q)' font 'hack,11'
 set tics font ',9'

@@ -9,14 +9,13 @@ Kopietz](http://dx.doi.org/10.1103/PhysRevB.92.121409).
 ---
 
 ```bash
--.
- |--bauer
- |
- |--coupled2
- |
- |--frequency
- |
- \--non_perturbative.pdf
+.
+├── bauer
+├── coupled2
+├── finite_temp
+├── frequency
+├── non_perturbative.pdf
+└── README.md
 ```
 
 ### Contents
@@ -30,3 +29,18 @@ function.
 
 The pdf file contains the details of the calculations and the
 equations that are used in the codes.
+
+### Results
+---
+
+![](bauer/velocity3d.png)
+![](bauer/dielectric_function3d.png)
+![](bauer/renormalised_velocity.png)
+![](bauer/renormalised_dielectric.png)
+### Bosonic momenta in momentum shell
+![](coupled2/renormalised_velocity.png)
+![](coupled2/renormalised_dielectric.png)
+### Frequency Dependence
+![](frequency/frequency_dependence.png)
+### Temperature Dependence
+![](finite_temp/temperature_dependence.png)
