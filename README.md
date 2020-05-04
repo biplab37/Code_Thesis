@@ -37,10 +37,11 @@ equations that are used in the codes.
 ![](bauer/dielectric_function3d.png)
 ![](bauer/renormalised_velocity.png)
 ![](bauer/renormalised_dielectric.png)
-### Bosonic momenta in momentum shell
+#### Bosonic momenta in momentum shell
+
 ![](coupled2/renormalised_velocity.png)
 ![](coupled2/renormalised_dielectric.png)
-### Frequency Dependence
+#### Frequency Dependence
 ![](frequency/frequency_dependence.png)
-### Temperature Dependence
+#### Temperature Dependence
 ![](finite_temp/temperature_dependence.png)
