@@ -2,15 +2,14 @@
 !!!                                                                                   !!!
 !!!   A program which solves the intego-differential coupled equations given in the   !!!
 !!!   paper by Carsten Bauer, Andreas Rückriegel, Anand Sharma, and Peter Kopietz     !!!
-!!!   DOI: 10.1103/PhysRevB.92.121409. Here we have kept the bosonic mometa inside    !!!
-!!!   the mometum shell to be integrated out.                                         !!!
+!!!   DOI: 10.1103/PhysRevB.92.121409. Here we have added the temperature dependence. !!!
 !!!                                                                                   !!!
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
-program coupled2
+program finite
 
-	real :: phi,momentum,cutoff,dcutof,dphi
-	integer,parameter :: n=501,m=297,num=2000
+	real :: phi,momentum,cutoff,dcutoff,dphi
+	integer,parameter :: n=301,m=897,num=1000
 	real :: pi,cphi,integral_vel,integral_eps,eps(n,m),vel(n,m)
 	real :: epsilon_1,epsilon_2,vel_1,vel_2
 	integer :: index1,index2
@@ -19,7 +18,7 @@ program coupled2
 
 	dcutoff = 1.0/n
 	dphi = pi/(2.*num)
-	temp = 1.0
+	temp = 0.03
 
    ! Initialise velocity and dielectric function to unity at all momenta at the highest 
    ! cutoff
@@ -126,4 +125,4 @@ program coupled2
 
 	end function dielectric
 
-end program coupled2
+end program finite

@@ -2,12 +2,11 @@
 !!!                                                                                   !!!
 !!!   A program which solves the intego-differential coupled equations given in the   !!!
 !!!   paper by Carsten Bauer, Andreas Rückriegel, Anand Sharma, and Peter Kopietz     !!!
-!!!   DOI: 10.1103/PhysRevB.92.121409. Here we have kept the bosonic mometa inside    !!!
-!!!   the mometum shell to be integrated out.                                         !!!
+!!!   DOI: 10.1103/PhysRevB.92.121409. Here we have added temperature dependence.     !!!
 !!!                                                                                   !!!
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
-program coupled2
+program finite2 
 
 	real :: phi,momentum,cutoff,dcutoff,dphi
 	integer,parameter :: n=501,m=297,num=2000
@@ -185,4 +184,4 @@ program coupled2
 
 	end function dielectric
 
-end program coupled2
+end program finite2 

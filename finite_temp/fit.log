@@ -1,0 +1,198 @@
+
+
+*******************************************************************************
+Fri Apr 10 13:23:19 2020
+
+
+FIT:    data read from 'tempvsvel.dat'
+        format = z
+        #datapoints = 11
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x)=a+b*log(x)
+fitted parameters initialized with current variable values
+
+
+Current data point
+=========================
+#               = 1 out of 11
+x               = 1              
+z               = 4.13906        
+
+Current set of parameters
+=========================
+a               = 1              
+b               = 1              
+
+BREAK: Undefined value during function evaluation
+
+*******************************************************************************
+Fri Apr 10 13:24:12 2020
+
+
+FIT:    data read from 'tempvsvel.dat'
+        format = z
+        #datapoints = 10
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x)=a+b*log(x)
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   a             b            
+   0 1.9049739359e+02   0.00e+00  2.35e+00    1.000000e+00   1.000000e+00
+   4 1.9858292651e-02  -2.61e-02  2.35e-04    5.912068e-01  -5.014039e-01
+
+After 4 iterations the fit converged.
+final sum of squares of residuals : 0.0198583
+rel. change during last iteration : -2.61484e-07
+
+degrees of freedom    (FIT_NDF)                        : 8
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.0498226
+variance of residuals (reduced chisquare) = WSSR/ndf   : 0.00248229
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+a               = 0.591207         +/- 0.07186      (12.16%)
+b               = -0.501404        +/- 0.02266      (4.519%)
+
+correlation matrix of the fit parameters:
+                a      b      
+a               1.000 
+b               0.976  1.000 
+
+
+*******************************************************************************
+Fri Apr 10 13:28:50 2020
+
+
+FIT:    data read from 'tempvsvel.dat'
+        format = z
+        #datapoints = 11
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x)=a+b*log(x)
+fitted parameters initialized with current variable values
+
+
+Current data point
+=========================
+#               = 1 out of 11
+x               = 1              
+z               = 4.13906        
+
+Current set of parameters
+=========================
+a               = 1              
+b               = 1              
+
+BREAK: Undefined value during function evaluation
+
+*******************************************************************************
+Fri Apr 10 13:29:29 2020
+
+
+FIT:    data read from 'tempvsvel.dat'
+        format = z
+        #datapoints = 11
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x)=a+b*log(x)
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   a             b            
+   0 5.6133551168e+02   0.00e+00  4.11e+00    1.000000e+00   1.000000e+00
+   4 5.8812103762e-01  -1.56e-05  4.11e-04    1.623278e+00  -1.638607e-01
+
+After 4 iterations the fit converged.
+final sum of squares of residuals : 0.588121
+rel. change during last iteration : -1.55916e-10
+
+degrees of freedom    (FIT_NDF)                        : 9
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.25563
+variance of residuals (reduced chisquare) = WSSR/ndf   : 0.0653468
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+a               = 1.62328          +/- 0.116        (7.148%)
+b               = -0.163861        +/- 0.02027      (12.37%)
+
+correlation matrix of the fit parameters:
+                a      b      
+a               1.000 
+b               0.748  1.000 
+
+
+*******************************************************************************
+Fri Apr 10 14:00:26 2020
+
+
+FIT:    data read from 'tempvsvel.dat'
+        format = z
+        #datapoints = 11
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x)=a+b*log(x)
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   a             b            
+   0 4.0517812821e+02   0.00e+00  3.33e+00    1.000000e+00   1.000000e+00
+   4 3.3403697697e-01  -8.84e-07  3.33e-04    1.337857e+00  -2.555757e-01
+
+After 4 iterations the fit converged.
+final sum of squares of residuals : 0.334037
+rel. change during last iteration : -8.8351e-12
+
+degrees of freedom    (FIT_NDF)                        : 9
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.192653
+variance of residuals (reduced chisquare) = WSSR/ndf   : 0.0371152
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+a               = 1.33786          +/- 0.1066       (7.966%)
+b               = -0.255576        +/- 0.02315      (9.058%)
+
+correlation matrix of the fit parameters:
+                a      b      
+a               1.000 
+b               0.838  1.000 
+
+
+*******************************************************************************
+Fri Apr 10 14:01:28 2020
+
+
+FIT:    data read from 'tempvsvel.dat'
+        format = z
+        #datapoints = 11
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x)=a+b*log(x)
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   a             b            
+   0 2.9143592962e+02   0.00e+00  2.69e+00    1.000000e+00   1.000000e+00
+   4 2.1588002366e-02  -2.81e-03  2.69e-04    5.431792e-01  -5.175863e-01
+
+After 4 iterations the fit converged.
+final sum of squares of residuals : 0.021588
+rel. change during last iteration : -2.80657e-08
+
+degrees of freedom    (FIT_NDF)                        : 9
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.0489762
+variance of residuals (reduced chisquare) = WSSR/ndf   : 0.00239867
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+a               = 0.543179         +/- 0.04233      (7.792%)
+b               = -0.517586        +/- 0.01153      (2.227%)
+
+correlation matrix of the fit parameters:
+                a      b      
+a               1.000 
+b               0.937  1.000 
