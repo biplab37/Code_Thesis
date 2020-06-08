@@ -1,6 +1,6 @@
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !!!                                                                                   !!!
-!!!   A program which solves the intrego-differential coupled equations given in the   !!!
+!!!   A program which solves the intrego-differential coupled equations given in the  !!!
 !!!   paper by Carsten Bauer, Andreas Rückriegel, Anand Sharma, and Peter Kopietz     !!!
 !!!   DOI: 10.1103/PhysRevB.92.121409. Here we have kept the bosonic mometa inside    !!!
 !!!   the mometum shell to be integrated out.                                         !!!
@@ -77,24 +77,24 @@ program pole
 					if (cphi>1.0 - 2.0*cutoff/momentum) then
 						integral_eps = integral_eps + dielectric(phi,momentum,cutoff,vel_1,vel_2)
 						integral_vel = integral_vel + velocity(cphi,momentum,cutoff,epsilon_1,epsilon_2, &
-						vel_1,vel_2,0.0,0.0)
+						vel_1,vel_2,Y_1,Y_2)
 						integral_eps2 = integral_eps2 + dielectric2(phi,momentum,cutoff,vel_1,vel_2)
 						integral_wavefunc = integral_wavefunc + wavefunc_renorm(cphi,momentum,cutoff, &
 							epsilon_1,epsilon_2,vel_1,vel_2,Y_1,Y_2)
 					end if
 
 			end do
-			vel(n-i,j) = vel(n-i+1,j) + dcutoff*dphi*integral_vel
+			vel(n-i,j) = vel(n-i+1,j) + dcutoff*dphi*integral_vel/(1.0-wavefunc(n-i+1,j))
 			eps(n-i,j) = eps(n-i+1,j) + dcutoff*dphi*integral_eps
 			eps2(n-i,j) = eps2(n-i+1,j) + dcutoff*dphi*integral_eps2
 			wavefunc(n-i,j) = wavefunc(n-i+1,j) + dcutoff*dphi*integral_wavefunc
 		end do
 	end do
 
-	open(1,file='epscon0.dat')
-	open(2,file="velcon0.dat")
-	open(3,file="epsc2on0.dat")
-	open(4,file="wavefunc.dat")
+	open(1,file='epscon.dat')
+	open(2,file="velcon.dat")
+	open(3,file="epsc2on.dat")
+	open(4,file="wavefunc1.dat")
 
 	! do i=1,n
 		do j=1,m

@@ -9,7 +9,7 @@
 program bauer
 
 	real :: phi,momentum,cutoff,dcutoff
-	integer,parameter  :: n=201,m=97,num=2000
+	integer,parameter  :: n=501,m=297,num=2000
 	real :: pi,cphi1,cphi2,integral_vel,integral_eps,eps(n,m),vel(n,m)
 	integer :: index1,index2
 
@@ -89,6 +89,10 @@ program bauer
 	open(1,file='eps.dat')
 	open(2,file="vel.dat")
 
+	write(1,*) '# This file contain the data for dielectric function'
+	write(1,*) '# Cutoff    ','Momentum    ','Dielectric'
+	write(2,*) '# This file contain the data for velocity'
+	write(2,*) '# Cutoff    ','Momentum    ','Velocity'
 	do i=1,n
 		do j=1,m
 			write(1,*) 1.0*i/n,1.0*j/m, eps(i,j)
@@ -99,6 +103,22 @@ program bauer
 	end do
 	close(1)
 	close(2)
+
+	open(3,file='epson0.dat')
+	open(4,file='velon0.dat')
+
+	write(3,*) '# This file contain the data for renormalised dielectric function'
+	write(4,*) '# This file contain the data for renormalised velocity'
+	write(3,*) '# Momentum    ','Dielectric'
+	write(4,*) '# Momentum    ','Velocity'
+
+	do j=1,m
+		write(3,*) 1.0*j/m, eps(1,j)
+		write(4,*) 1.0*j/m, vel(1,j)	
+	end do 
+	
+	close(3)
+	close(4)
 
 	STOP
 
