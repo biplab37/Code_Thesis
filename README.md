@@ -41,8 +41,7 @@ equations that are used in the codes.
 
 ![](coupled2/renormalised_velocity.png)
 ![](coupled2/renormalised_dielectric.png)
-#### Frequency Dependence
-![](frequency/frequency_dependence.png)
+
 #### Temperature Dependence
 ![](finite_temp2/temperature_dependence_velocity.png)
 ![](finite_temp2/temperature_dependence_dielectric.png)
