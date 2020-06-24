@@ -19,7 +19,7 @@ for temp in temp_list:
 	vel['momentum'],vel['velocity'] = np.loadtxt('velon0_'+str(temp)+'.dat',unpack=True)
 	plt.plot(vel['momentum'],vel['velocity'],color=cmap(temp*10),label='t = '+str(temp))
 plt.xlabel(r'$k/\Lambda_0$')
-plt.ylabel(r'$v_{\Lambda\to 0}(k)$')
+plt.ylabel(r'$\dfrac{v_{\Lambda\to 0}(k)}{v_F}$')
 plt.title('Temperature Dependence of Renormalised Velocity')
 plt.xlim(0,1)
 plt.legend()

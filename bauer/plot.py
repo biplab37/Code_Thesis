@@ -8,7 +8,7 @@ from scipy.optimize import curve_fit
 
 # Manual Change to make plots nicer.
 plt.rcParams['figure.figsize'] = 7,5
-mpl.rcParams['font.size'] = 12
+mpl.rcParams['font.size'] = 13
 
 # Read Files	
 vel={}
@@ -27,7 +27,7 @@ y_fit = popt[0] + popt[1]*np.log(vel['momentum'])
 plt.plot(vel['momentum'],y_fit,'black',label='a + b*log(x)\na='+str(np.round(popt[0],2))+' b='+str(np.round(popt[1],2)))
 plt.plot(vel['momentum'],vel['velocity'],linewidth='3',label='velocity')
 plt.xlabel(r'$k/\Lambda_0$')
-plt.ylabel(r'$v_{\Lambda\to 0}(k)$')
+plt.ylabel(r'$\dfrac{v_{\Lambda\to 0}(k)}{v_F}$')
 plt.title('Renormalised Velocity')
 plt.xlim(0,1)
 plt.legend()
