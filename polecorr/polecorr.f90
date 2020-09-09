@@ -3,11 +3,11 @@
 !!!   A program which solves the intrego-differential coupled equations given in the  !!!
 !!!   paper by Carsten Bauer, Andreas Rückriegel, Anand Sharma, and Peter Kopietz     !!!
 !!!   DOI: 10.1103/PhysRevB.92.121409. Here we have kept the bosonic mometa inside    !!!
-!!!   the mometum shell to be integrated out.  1+pole                                       !!!
+!!!   the mometum shell to be integrated out.  1+pole                                 !!!
 !!!                                                                                   !!!
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
-program pole
+program polecorr
 
 	real :: phi,momentum,cutoff,dcutoff,dphi
 	integer,parameter :: n=501,m=297,num=2000
@@ -202,4 +202,4 @@ program pole
 
 	end function wavefunc_renorm
 
-end program pole
+end program polecorr

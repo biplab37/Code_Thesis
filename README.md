@@ -12,8 +12,10 @@ Kopietz](http://dx.doi.org/10.1103/PhysRevB.92.121409).
 .
 ├── bauer
 ├── coupled2
-├── finite_temp
-├── frequency
+├── finite_temp2
+├── pole
+├── polecorr
+├── zero_momentum
 ├── non_perturbative.pdf
 └── README.md
 ```
@@ -37,12 +39,12 @@ equations that are used in the codes.
 ![](bauer/dielectric_function3d.png)
 ![](bauer/renormalised_velocity.png)
 ![](bauer/renormalised_dielectric.png)
-#### Bosonic momenta in momentum shell
+
+#### Bosonic momenta inside momentum shell
 
 ![](coupled2/renormalised_velocity.png)
 ![](coupled2/renormalised_dielectric.png)
-#### Frequency Dependence
-![](frequency/frequency_dependence.png)
+
 #### Temperature Dependence
 ![](finite_temp2/temperature_dependence_velocity.png)
 ![](finite_temp2/temperature_dependence_dielectric.png)

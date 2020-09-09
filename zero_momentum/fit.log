@@ -1135,3 +1135,36 @@ correlation matrix of the fit parameters:
 c               1.000 
 d               0.800  1.000 
 e               0.647  0.938  1.000 
+
+
+*******************************************************************************
+Thu Jun 25 15:15:11 2020
+
+
+FIT:    data read from 'zero_momentum_temp_dependence.dat'
+        format = z
+        #datapoints = 50
+        residuals are weighted equally (unit weight)
+
+function used for fitting: e(x)
+	e(x) = a + b*(e^(-c/x) -e^(-d/x))
+fitted parameters initialized with current variable values
+
+
+
+*******************************************************************************
+Thu Jun 25 15:15:45 2020
+
+
+FIT:    data read from 'zero_momentum_temp_dependence.dat'
+        format = z
+        #datapoints = 50
+        residuals are weighted equally (unit weight)
+
+function used for fitting: e(x)
+	e(x) = a + b*(exp(-c/x) -exp(-d/x))
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   a             b             c             d            
+   0 1.2765654379e+01   0.00e+00  5.33e-01    1.000000e+00   1.000000e+00   1.000000e+00   1.000000e+00
+BREAK: Singular matrix in Invert_RtR

@@ -1,7 +1,7 @@
 # Plotting commands in python
 
 import matplotlib as mpl
-import pandas as pd
+# import pandas as pd
 import matplotlib.pyplot as plt
 import numpy as np
 from scipy.optimize import curve_fit
@@ -31,7 +31,7 @@ plt.ylabel(r'$\dfrac{v_{\Lambda\to 0}(k)}{v_F}$')
 plt.title('Renormalised Velocity')
 plt.xlim(0,1)
 plt.legend()
-plt.savefig("renormalised_velocity.pdf")
+plt.savefig("renormalised_velocity.pdf") # pdf is created to embed easily through pdflatex. use png for other cases
 plt.close()
 
 plt.plot(eps['momentum'],eps['dielectric'],linewidth='2',label='dielectric')

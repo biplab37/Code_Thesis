@@ -99,6 +99,13 @@ program finite2
 
 	open(3,file="epson0_0.10.dat")
 	open(4,file="velon0_0.10.dat")
+
+	write(3,*) 'This file contain the data of renormalised dielectric constant at finite temperature'
+	write(4,*) 'This file contain the data of renormalised velocity at finite temperature'
+
+	write(3,*) 'Momentum      ', 'Dielectric'
+	write(4,*) 'Momentum      ', 'Velocity'
+
 	do j=1,m
 		write(3,*) 1.0*j/m, eps(2,j)
 		write(4,*) 1.0*j/m, vel(2,j)

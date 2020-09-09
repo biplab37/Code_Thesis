@@ -81,6 +81,14 @@ program coupled2
 	open(1,file='epson0.dat')
 	open(2,file="velon0.dat")
 
+	write(1,*) '# This file contain the data for renormalised dielectric function &
+		when bosonic momenta are taken inside the shell'
+	write(1,*) '# Momentum    ','Dielectric'
+
+	write(2,*) '# This file contain the data for renormalised velocity &
+		when bosonic momenta are taken inside the shell'
+	write(2,*) '# Momentum    ','Velocity'
+
 	! do i=1,n
 		do j=1,m
 			write(1,*) 1.0*j/m, eps(2,j)
@@ -103,6 +111,7 @@ program coupled2
 		pi = 3.14159
 
 		val1 = 2*cutoff + momentum*cphi
+		k= momentum
 		value = -2.2*((val1*cphi - k)/(k*epsilon_2) - (val1*cphi + k)/(k*epsilon_1)) &
 		/(2.*pi*SQRT(val1**2 - momentum**2))
 

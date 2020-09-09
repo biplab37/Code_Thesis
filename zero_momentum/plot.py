@@ -39,15 +39,15 @@ plt.savefig("zero_momentum_temp_dependence.pdf")
 plt.close()
 
 
-def fitting_func3(x,a,b,c):
-	return a+b*np.exp(-c/x)
+def fitting_func3(x,a,b,c,d):
+	return a+b*(np.exp(-c/x) - np.exp(-d/x))
 
 popt,pcov = curve_fit(fitting_func3,vel['temp'],vel['velocity'])
-y_fit3 = popt[0] + popt[1]*np.exp(-popt[2]/vel['temp'])
+y_fit3 = popt[0] + popt[1]*(np.exp(-popt[2]/vel['temp']) - np.exp(-popt[3]/vel['temp']))
+print(popt,pcov)
 
-
-plt.plot(vel['temp'],y_fit3,'black',label=r'a + b$e^{-c/t}$'+'\na='+str(np.round(popt[0],2))+' b='+str(np.round(popt[1],2))+' c='+str(np.round(popt[2],2)))
-plt.plot(vel['temp'],vel['velocity'],'x',linewidth='3',label='velocity')
+plt.plot(vel['temp'],y_fit3,'black',label=r'a + b$(e^{-c/t} - e^{-d/t})$'+'\na='+str(np.round(popt[0],2))+' b='+str(np.round(popt[1],2))+' c='+str(np.round(popt[2],2))+' d='+str(np.round(popt[3],2)))
+plt.plot(vel['temp'],vel['velocity'],linewidth='3',label='velocity')
 plt.xlabel(r'$t$')
 plt.ylabel(r'$\dfrac{v_{\Lambda\to 0}(k\to0)}{v_F}$')
 plt.title('Temperature Dependence of Velocity at zero Momentum')
